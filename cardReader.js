@@ -10,7 +10,7 @@ var draggingCard = -1;
 var cardDragCountdown = 0;
 var maxCards = 21;
 
-var ratio = .7;
+var ratio = .57;
 
 var cards = [];
 var playedCards = [];
