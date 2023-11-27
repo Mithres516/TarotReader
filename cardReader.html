@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="cardReader.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div>
+                <div>Cards Size: <input id="cards-size-x" type="number" min="0" value="200" />x<input id="cards-size-y"
+                        type="number" min="0" value="350" /></div>
+                <div style="margin-left: 100px">
+                    <span id="display-ratio">Keep Ratio 0.57</span><input id="keep-ratio" checked type="checkbox" />
+                </div>
+            </div>
+            <div>Cards Count: <input id="cards-number" type="number" min="0" value="22" /></div>
+            <div><button id="reset-cards" type="button">Clear and Update Cards, Save Settings</button></div>
+            <div class="changes-warning">Changes will not be applied until the Clear and Update Cards button is pressed
+            </div>
+            <div class="spacer"></div>
+            <div id="toggle-rotable-desc" class="toggle-rotable-desc">Cards are always upright</div>
+            <div>
+                <label class="switch">
+                    <input id="toggle-rotable" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="table" id="table" draggable="false" oncontextmenu="return false">
+            <div id="deck" class="deck" draggable="false">
+                <div class="card-chooser-container"><button class="card-chooser">Choose a card</button></div>
+                <div id="pick-card" class="pick-card" draggable="false"></div>
+                <div class="decorative-card-4" draggable="false"></div>
+                <div class="decorative-card-3" draggable="false"></div>
+                <div class="decorative-card-2" draggable="false"></div>
+                <div class="decorative-card-1" draggable="false"></div>
+            </div>
+            <div id="ghost-card" class="ghost-card" draggable="false"></div>
+        </div>
+        <div id="choose-card-dialog" class="dialog">
+            Choose the card number
+            <input id="choose-card-input" type="number" min="0" value="0" />
+            <button id="choose-card-confirm" type="button">confirm</button>
+            <button id="choose-card-cancel" type="button">cancel</button>
+        </div>
+
+        <div id="choose-card-error-dialog" class="dialog">
+            The choosen card has already been selected <button id="choose-card-error-close">X</button>
+        </div>
+    </div>
+</body>
+
+</html>
