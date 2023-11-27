@@ -32,5 +32,5 @@ If you want to costumize the app, download it, and change the images in the Card
 
 Credits to:
 
-tarots: giftedMG https://pixabay.com/users/21022019/
-cards back: rawpixel.com https://www.freepik.com/free-vector/mystical-golden-frame-black-background_16404673.htm#query=tarot%20card%20back&position=11&from_view=keyword&track=ais&uuid=c86a8adf-28da-48d4-9fa1-1a79cbcb7de3
+* tarots: giftedMG https://pixabay.com/users/21022019/
+* cards back: rawpixel.com https://www.freepik.com/free-vector/mystical-golden-frame-black-background_16404673.htm#query=tarot%20card%20back&position=11&from_view=keyword&track=ais&uuid=c86a8adf-28da-48d4-9fa1-1a79cbcb7de3
