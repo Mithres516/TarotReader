@@ -1,5 +1,5 @@
 # TarotReader
-A simple js tarot reader, customizable
+A simple JQuery tarot reader, customizable
 
 
 Simply drag from the bottom-right deck to draw a random card.
